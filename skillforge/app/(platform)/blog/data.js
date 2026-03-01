@@ -1,0 +1,35 @@
+export const posts = [
+    {
+    id: 1,
+    title: "Getting Started with Next.js",
+    excerpt: "Learn the basics of Next.js...",
+    category: "Web Dev",
+    date: "March 1, 2026",
+    readTime: "5 min",
+    year: "2026",
+    month: "03",
+    slug: "getting-started-nextjs",
+  },
+    {
+      id: 2,
+      title: "Understanding Next.js 15 Layouts",
+      excerpt: "Nesting layouts can be tricky. We break down the App Router hierarchy so you never get lost again.",
+      date: "Feb 20, 2026",
+      category: "Tutorial",
+      readTime: "8 min",
+      year: "2026",
+      month: "03",
+      slug: "understanding-nextjs-15-layouts",
+    },
+    {
+      id: 3,
+      title: "The future of AI in learning",
+      excerpt: "Will AI replace mentors? We explore how SkillForge is integrating AI to help, not replace, humans.",
+      date: "Feb 15, 2026",
+      category: "Industry",
+      readTime: "10 min",
+      year: "2026",
+      month: "02",
+      slug: "future-of-ai-in-learning",
+    }
+  ];

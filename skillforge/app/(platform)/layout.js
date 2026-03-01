@@ -1,23 +1,21 @@
-// app/(platform)/layout.js
-export default function PlatformLayout({ children }) {
+import Link from 'next/link';
+
+export default function PlatformLayout({children}) {
   return (
-    <div className="flex h-screen">
-      {/* Sidebar - Fixed width */}
-      <aside className="w-64 bg-gray-100 p-4 border-r">
-        <nav>
-          <h2 className="font-bold mb-4">SkillForge Platform</h2>
-          <ul className="space-y-2">
-            <li><a href="/dashboard" className="hover:text-blue-600">Dashboard</a></li>
-            <li><a href="/courses" className="hover:text-blue-600">Courses</a></li>
-            <li><a href="/mentors" className="hover:text-blue-600">Mentors</a></li>
-          </ul>
+    <div className='platform-container'>
+      <aside className='sidebar'>
+        <div className='sidebar-logo'>SkillForge</div>
+        <nav className='sidebar-nav'>
+          <Link href="/" className='nav-link'>Home</Link>
+          <Link href="/dashboard" className='nav-link'>Dashboard</Link>
+          <Link href="/courses" className='nav-link'>Courses</Link>
+          <Link href="/categories" className='nav-link'>Categories</Link>
+          <Link href="/mentors" className='nav-link'>Mentors</Link>
+          <Link href="/paths" className='nav-link'>Paths</Link>
+          <Link href="/blog" className='nav-link'>Blog</Link>
         </nav>
       </aside>
-
-      {/* Main Content Area */}
-      <main className="flex-1 overflow-y-auto p-8">
-        {children}
-      </main>
+      <main className='main-content'>{children}</main>
     </div>
-  );
+  )
 }

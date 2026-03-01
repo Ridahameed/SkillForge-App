@@ -1,0 +1,14 @@
+.subcategoryPage{
+    padding: 1.5rem;
+}
+.subcategoryTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #18448a;
+    margin-bottom: 1.5rem;
+}
+.subcategoryPage p{
+    font-size: 1.125rem;
+    color: #334155;
+    line-height: 1.6;
+}
